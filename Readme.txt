@@ -1,0 +1,1 @@
+Cách chạy: bỏ vào htdocs của XAMPP rồi nhập Localhost(:port)/CNPM/TRACUU

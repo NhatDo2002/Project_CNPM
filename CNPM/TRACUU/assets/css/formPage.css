@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: #E5D9B6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.formLogin{
+    position: relative;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 400px;
+}
+
+.formLogin h2{
+    color: #285430;
+    margin-bottom: 20px;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.formLogin input{
+    display: block;
+    width: 300px;
+    height: 50px;
+    margin: 0px auto;
+    background-color: #9BA17B;
+    color: white;
+    border-radius: 30px;
+    padding-left: 15px;
+    border: 1px solid transparent;
+}
+
+.formLogin button{
+    display: block;
+    width: 300px;
+    height: 50px;
+    margin: 0px auto;
+    background-color: #285430;
+    color: white;
+    border-radius: 30px;
+    border: 1px solid transparent;
+}
+
+.mess{
+    color: #9BA17B;
+    font-size: 30px;
+    text-align: center;
+}
+
+.bottom{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    height: fit-content;
+    
+}
+.bottom-left{
+    position: absolute;
+    color: #285430;
+    left: 10px;
+}
+
+.bottom-right{
+    position: absolute;
+    right: 10px;
+    color: #285430;
+}
+.register{
+    font-size: 20px;
+}
