@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+.contain{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.sideBar{
+    width: 350px;
+    height: 700px;
+    background-color: #8BBCCC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sideBar h2{
+    font-size: 50px;
+    font-weight: bold;
+    font-style: italic;
+    color: aliceblue;
+    margin: 20px 0px;
+}
+
+a:-webkit-any-link{
+    color: aliceblue;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.sideBar-items{
+    width: 300px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    border-top: 1px solid whitesmoke;
+    border-bottom: 1px solid whitesmoke;
+}
+
+.items{
+    margin: 15px 0;
+    color: aliceblue;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.logOut{
+    width: 300px;
+    height: fit-content;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.content{
+    height: 100vh;
+    width: 80%;
+}
+
+.header{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #8BBCCC;
+}
+
+.header h3{
+    color: #8BBCCC;
+    font-size: 40px;
+    padding: 20px;
+}
+
+.header p{
+    color: #8BBCCC;
+    font-size: 30px;
+    margin: 30px;
+}
+
+.img{
+    margin-right: 5px;
+}

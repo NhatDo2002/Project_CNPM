@@ -37,8 +37,16 @@
                 $username = isset($_POST['username']) ? trim($_POST['username']) : '';
                 $password = isset($_POST['password']) ? trim($_POST['password']) : '';
                 $repassword = isset($_POST['repassword']) ? trim($_POST['repassword']) : '';
-                echo $this->models->checkRegister($username,$password,$repassword);
+                $ten = isset($_POST['hovaten']) ? trim($_POST['hovaten']) : '';
+                $sdt = isset($_POST['sdt']) ? trim($_POST['sdt']) : '';
+                $email = isset($_POST['email']) ? trim($_POST['email']) : '';
+                echo $this->models->checkRegister($username,$password,$repassword,$ten,$sdt,$email);
             }
+        }
+
+        public function logout(){
+            unset($_SESSION['user']);
+            header('Location: ./login');
         }
     }
 ?>

@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: #BAD1C2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.adminLogin{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    height: 300px;
+}
+
+.adminLogin h2{
+    color: #153462;
+    margin-bottom: 50px;
+    font-size: 50px;
+}
+
+.adminLogin input{
+    display: block;
+    width: 300px;
+    height: 50px;
+    background-color: #4FA095;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    padding-left: 15px;
+    color: aliceblue;
+}
+
+.adminLogin button{
+    display: block;
+    width: 300px;
+    height: 50px;
+    background-color: #153462;
+    color: aliceblue;
+    border: 1px solid transparent;
+    border-radius: 30px;
+}
+
+.mess{
+    color: #4FA095;
+    font-size: 30px;
+}
+
+
+

@@ -25,7 +25,6 @@ body{
 
 .formLogin h2{
     color: #285430;
-    margin-bottom: 20px;
     font-size: 50px;
     margin-bottom: 50px;
 }
@@ -63,7 +62,7 @@ body{
     position: relative;
     display: flex;
     justify-content: space-around;
-    height: fit-content;
+    height: 50px;
     
 }
 .bottom-left{

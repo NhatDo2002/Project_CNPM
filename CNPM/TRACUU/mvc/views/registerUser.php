@@ -9,11 +9,20 @@
     <title>Register</title>
 </head>
 <body>
-<div class="formLogin">
+    <div class="formLogin">
         <h2>Đăng Ký</h2>
         <form action="/CNPM/TRACUU/Home/register" method="post">
             <div class="form-group">
                 <input type="text" name="username" placeholder="Tên đăng nhập">
+            </div>
+            <div class="form-group">
+                <input type="text" name="hovaten" placeholder="Họ và tên">
+            </div>
+            <div class="form-group">
+                <input type="number" name="sdt" placeholder="Số điện thoại">
+            </div>
+            <div class="form-group">
+                <input type="mail" name="email" placeholder="Email">
             </div>
             <div class="form-group">
                 <input type="password" name="password" placeholder="Mật khẩu">

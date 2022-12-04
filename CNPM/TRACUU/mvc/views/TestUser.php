@@ -1,3 +1,7 @@
+<?php 
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,9 +13,13 @@
 <body>
     <h1>User</h1>
     <?php
-        while($row = mysqli_fetch_array($data["user"])){
-            echo $row["username"];
+        if(isset($_SESSION['user'])){
+            echo "<p>".$_SESSION['user']."</p>";
+            while($row = mysqli_fetch_array($data["user"])){
+                echo $row["username"];
+            }
         }
     ?>
+    <a href="/CNPM/TRACUU/Home/logout">Đăng xuất</a>
 </body>
 </html>

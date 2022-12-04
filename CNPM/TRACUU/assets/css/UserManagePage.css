@@ -1,0 +1,46 @@
+.section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.table{
+    width: 95%;
+    box-shadow: 0 0 10px #d4cccc;
+    text-align: center;
+    font-size: 20px;
+    background-color: #6FB2D2;
+}
+
+tbody td{
+    padding: 15px 0;
+}
+
+.delete{
+    background-color: red;
+    font-size: 15px;
+    padding: 10px;
+    border:1px solid transparent;
+    border-radius: 20px;
+    font-style: oblique;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.edit{
+    background-color: #4FA095;
+    font-size: 15px;
+    padding: 10px;
+    border:1px solid transparent;
+    border-radius: 20px;
+    font-style: oblique;
+}
+
+.searchUser{
+    margin: 15px 29px;
+    width: 95%;
+    height: 30px;
+    font-size: 20px;
+    border: transparent;
+    box-shadow: 0 0 10px #d4cccc;
+}

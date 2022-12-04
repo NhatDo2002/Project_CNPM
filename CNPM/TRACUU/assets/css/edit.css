@@ -1,0 +1,120 @@
+.section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.formEdit{
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0px;
+    align-items: center;
+    box-shadow: 0px 0px 5px #d4cccc;
+    padding: 15px;
+}
+
+
+.formEdit input{
+    display: block;
+    width: 400px;
+    height: 60px;
+    margin: 15px;
+    background-color: #6FB2D2;
+    color: white;
+    border-radius: 30px;
+    padding-left: 15px;
+    border: 1px solid transparent;
+    font-size: 20px;
+}
+
+.formEdit button{
+    display: block;
+    width: 200px;
+    height: 60px;
+    margin: 15px;
+    background-color: #6FB2D2;
+    color: white;
+    border-radius: 30px;
+    border: 1px solid transparent;
+    font-size: 20px;
+    text-align: center;
+}
+
+.section h3{
+    color: #6FB2D2;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 0.5px 1px 1px black;
+}
+
+#tree{
+    color: #B6E2A1;
+    font-weight: bold;
+    text-shadow: 0.5px 1px 1px black;
+}
+
+.formEditTree{
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0px;
+    align-items: center;
+    box-shadow: 0px 0px 5px #d4cccc;
+    padding: 15px;
+}
+
+
+.formEditTree input{
+    display: block;
+    width: 400px;
+    height: 60px;
+    margin: 15px;
+    background-color: #B6E2A1;
+    color: white;
+    padding-left: 15px;
+    border: 1px solid black;
+    font-size: 20px;
+}
+
+.formEditTree button{
+    display: block;
+    width: 150px;
+    height: 50px;
+    margin: 15px;
+    background-color: #B6E2A1;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.formEditTree textarea{
+    padding-left: 15px;
+    font-size: 20px;
+    margin: 15px;
+    background-color: #B6E2A1;
+    color: white;
+    border: 1px solid black;
+}
+
+#des{
+    margin-right: 330px;
+}
+
+.formEditTree label{
+    margin-left: 15px;
+    font-size: 20px;
+    color: #B6E2A1;
+    font-weight: bold;
+}
+
+.formEdit label{
+    margin-left: 15px;
+    font-size: 20px;
+    color: #6FB2D2;
+    font-weight: bold;
+}
