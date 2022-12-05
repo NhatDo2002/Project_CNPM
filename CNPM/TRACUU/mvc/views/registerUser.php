@@ -9,7 +9,7 @@
     <title>Register</title>
 </head>
 <body>
-    <div class="formLogin">
+    <div class="formLogin" style="height:700px;">
         <h2>Đăng Ký</h2>
         <form action="/CNPM/TRACUU/Home/register" method="post">
             <div class="form-group">

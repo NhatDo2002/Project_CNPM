@@ -1,4 +1,5 @@
 <?php 
+    session_start();
     class User extends DB{
         public function getUser(){
             $sql = "SELECT * FROM user";
@@ -78,6 +79,31 @@
             $sql = "SELECT * FROM user where hoten like '%$ten%'";
             if(mysqli_query($this->conn,$sql)){
                 return (mysqli_query($this->conn,$sql));
+            }
+        }
+
+        public function checkChange($pass,$newpass,$repass){
+            if(empty($newpass) || empty($pass) || empty($repass)){
+                return "<p class='mess'>Vui lòng điền đầy đủ</p>";
+            }
+
+            if($newpass != $repass){
+                return "<p class='mess'>Hai mật khẩu không giống nhau</p>";
+            }
+
+            if(strlen($newpass) < 6){
+                return "<p class='mess'>Mật khẩu không đủ độ dài</p>";
+            }
+
+            $sql = "SELECT * FROM user WHERE password = '$pass'";
+            $result = mysqli_query($this->conn,$sql);
+            if(mysqli_num_rows($result) > 0){
+                $sql2 = "UPDATE user set password = '$newpass' where password = '$pass'";
+                if(mysqli_query($this->conn,$sql2)){
+                    header('location: ./SayHi');
+                }
+            }else{
+                return "<p class='mess'>Mật khẩu cũ nhập không đúng</p>";
             }
         }
     }

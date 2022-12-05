@@ -43,6 +43,13 @@
                 return (mysqli_query($this->conn,$sql));
             }
         }
+
+        public function catagoryTree($loai){
+            $sql = "SELECT * FROM caythuoc where Loai = '$loai'";
+            if(mysqli_query($this->conn,$sql)){
+                return (mysqli_query($this->conn,$sql));
+            }
+        }
         
     }
 ?>

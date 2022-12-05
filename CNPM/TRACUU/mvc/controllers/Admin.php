@@ -14,7 +14,11 @@
         }
         //-----------Trang chủ-------------------------------
         public function show(){
-            $this->views = $this->view('homeAdmin',[]);
+            if(isset($_SESSION['admin'])){
+                $this->views = $this->view('homeAdmin',[]);
+            }else{
+                $this->views = $this->view('loginAdmin',[]);
+            }
         }
         //------------Đăng nhập/Đăng xuất---------------------
         public function loginAd(){
@@ -139,14 +143,20 @@
         }
 
         public function catagory(){
-            if(isset($_POST['userCom'])){
-                $chucvu = 'Người dùng';
-            }else if(isset($_POST['adminCom'])){
-                $chucvu = 'Quản lý';
-            }
-            $this->views = $this->view('manageComment',[
-                'catagory' => $this->modelCom->catagoryCom($chucvu)
-            ]);
+            if(isset($_POST['all'])){
+                $this->views = $this->view('manageComment',[
+                    'catagory' => $this->modelCom->getAllCom()
+                ]);
+            }else{
+                if(isset($_POST['userCom'])){
+                    $chucvu = 'Người dùng';
+                }else if(isset($_POST['adminCom'])){
+                    $chucvu = 'Quản lý';
+                }
+                $this->views = $this->view('manageComment',[
+                    'catagory' => $this->modelCom->catagoryCom($chucvu)
+                ]);
+            } 
         }
     }
 ?>

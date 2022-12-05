@@ -30,6 +30,7 @@
                 <form action="/CNPM/TRACUU/Admin/catagory" method="post">
                     <button class="userCom" name="userCom">Người dùng</button>
                     <button class="adminCom" name="adminCom">Quản lý</button>
+                    <button class="allCom" name="all">Tất cả</button>
                 </form>
             </div>
             <div class="section">
